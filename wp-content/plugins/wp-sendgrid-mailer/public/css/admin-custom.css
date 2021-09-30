@@ -1,0 +1,41 @@
+.add-top-margin  {
+    margin-top: 10px;
+}
+
+.move-text-to-right {
+    text-align: right;
+}
+
+.wp_mp_h3 {
+    margin: 5px 0;
+}
+
+hr.dashed {
+    border-top: 1px dashed #8c8b8b;
+    border-bottom: 1px dashed #fff;
+}
+
+.dash-email-icon    {
+    width: 25px;
+}
+
+.settings-radio {
+    margin-top: 2px !important;
+}
+
+.settings-checkbox {
+    margin-top: 0px !important;
+}
+
+.service-selection-label {
+    margin-bottom: 0px;
+}
+
+.service-selection  {
+    margin-top: 10px;
+}
+
+.sendgrid-apikey-generation-link    {
+    margin-left: 525px;
+    font-size: 11px;
+}
