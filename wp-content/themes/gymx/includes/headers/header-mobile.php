@@ -15,16 +15,24 @@ $logo_width_height = get_theme_mod( 'gymx_logo_width_height', '' );
 	<div class="container">
 	    <div class="row">
 	        <div class="col-xs-12 v-align">
-    			<div id="mobile-logo" class="logo">
-    				<?php if ( ! empty( $logo ) ){ ?>
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo-mobile" title="<?php echo esc_attr( get_bloginfo( 'name','display' ) ); ?>" rel="home">
-                                <img src="<?php echo esc_url($logo); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" srcset="<?php echo esc_url($logo); ?><?php echo empty ( $logo2x ) ? '' : ', ' . esc_url($logo2x) . ' 2x'; ?>" class="img-responsive" <?php echo wp_kses_post($logo_width_height); ?> />
+    			<!--<div id="mobile-logo" class="logo">
+    				<?php /*if ( ! empty( $logo ) ){ */?>
+                            <a href="<?php /*echo esc_url( home_url( '/' ) ); */?>" id="site-logo-mobile" title="<?php /*echo esc_attr( get_bloginfo( 'name','display' ) ); */?>" rel="home">
+                                <img src="<?php /*echo esc_url($logo); */?>" alt="<?php /*echo esc_attr( get_bloginfo( 'name' ) ); */?>" srcset="<?php /*echo esc_url($logo); */?><?php /*echo empty ( $logo2x ) ? '' : ', ' . esc_url($logo2x) . ' 2x'; */?>" class="img-responsive" <?php /*echo wp_kses_post($logo_width_height); */?> />
                             </a>
-                        <?php } else { ?>
-    					<a href="<?php echo esc_url(home_url()); ?>/"><?php esc_html(bloginfo('name')); ?></a>
-    				<?php } ?>
-    			</div>
-    			<a href="#" id="mobile-navigation-btn"><i class="fa fa-bars"></i></a>
+                        <?php /*} else { */?>
+    					<a href="<?php /*echo esc_url(home_url()); */?>/"><?php /*esc_html(bloginfo('name')); */?></a>
+    				<?php /*} */?>
+    			</div>-->
+    			<!--<a href="#" id="mobile-navigation-btn"><i class="fa fa-bars"></i></a>-->
+                <!-- top header menu of mobile -->
+                <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'mobile_header',
+                        'menu_id' => 'mobile-header-nav',
+                        'fallback_cb' => false
+                    ));
+                ?>
     		</div>    
 	    </div>
 	</div>

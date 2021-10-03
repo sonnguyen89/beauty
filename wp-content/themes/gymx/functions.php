@@ -39,3 +39,8 @@ if ( ! function_exists( 'rwmb_meta' ) ) {
         return false;
     }
 }
+
+/**
+ * custom theme supports.
+ */
+require_once get_template_directory() . '/custom_theme.php';

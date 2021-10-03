@@ -10,3 +10,24 @@ License URI: http://themeforest.net/licenses/terms/regular
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, full-width-template, theme-options, editor-style, featured-images, post-formats, sticky-post, translation-ready
 Text Domain: gymx
 */
+#mobile-header-nav li {
+    padding-top: 15px;
+    line-height: 21px;
+    text-align: center;
+}
+#mobile-header-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu-mobile-menu-top-container {
+    width: 100%;
+}
+
+.menu-mobile-menu-top-container #mobile-header-nav span.link-label {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}

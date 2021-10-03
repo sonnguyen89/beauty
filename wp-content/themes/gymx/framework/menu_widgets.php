@@ -12,7 +12,8 @@ if(!( function_exists('gymx_register_nav_menus') )){
         register_nav_menus(
             array(
                 'main'  => esc_html__( 'Main Menu', 'gymx' ),
-                'mobile'  => esc_html__( 'Mobile Menu', 'gymx' )
+                'mobile'  => esc_html__( 'Mobile Menu', 'gymx' ),
+                 'mobile_header'  => esc_html__( 'Mobile Header Menu', 'gymx' )
             )
         );
     }
