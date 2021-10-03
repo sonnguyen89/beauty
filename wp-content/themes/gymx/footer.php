@@ -37,7 +37,13 @@ $footer_text = gymx_translate_theme_mod('gymx_footer_text', $footer_text);
               <div class="col-xs-12 col-sm-6 col-lg-3">
                 <?php if ( is_active_sidebar( 'footer-3' ) ) { ?>
 					<?php dynamic_sidebar( 'footer-3' ); ?>
-                <?php } ?>
+                <?php } else {?>
+                        <div class="custom-social-icons">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </div>
+                 <?php  } ?>
               </div>
 			  <div class="col-xs-12 col-sm-6 col-lg-3">
                 <?php if ( is_active_sidebar( 'footer-4' ) ) { ?>

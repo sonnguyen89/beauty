@@ -31,3 +31,44 @@ Text Domain: gymx
     font-size: 16px;
     text-transform: uppercase;
 }
+.home.page .contact-section h1.contact-heading {
+    font-size: 3.44rem;
+}
+
+@media (max-width: 468px) {
+    .home.page .contact-section h1.contact-heading {
+        font-size: 27px;
+    }
+}
+@media (max-width: 768px) {
+    .home.page .contact-section .vc_column_container {
+        margin: 0;
+    }
+}
+
+footer.site-footer .top-footer-container .wp-block-social-links .wp-social-link {
+    padding:0;
+    margin: 4px 10px 4px 0;
+}
+footer.site-footer .top-footer-container .wp-block-social-links .wp-social-link svg {
+    width: 36px;
+    height: 36px;
+    padding-top: 2px;
+}
+footer.site-footer .top-footer-container .wp-block-social-links .wp-social-link a:before {
+    display: none;
+}
+footer.site-footer .top-footer-container .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor {
+    width: 50px;
+    height: 50px;
+    padding: 6px 0 0 6px;
+}
+@media (max-width: 768px) {
+    footer.site-footer .top-footer-container .wp-block-social-links {
+        align-items: center;
+        justify-content: center;
+    }
+    footer.site-footer .top-footer-container .social-header {
+        display : none
+    }
+}
