@@ -46,19 +46,25 @@ Text Domain: gymx
     }
 }
 
-footer.site-footer .top-footer-container .wp-block-social-links .wp-social-link {
+footer.site-footer .top-footer-container .custom-social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer.site-footer .top-footer-container .custom-social-icons a {
     padding:0;
     margin: 4px 10px 4px 0;
 }
-footer.site-footer .top-footer-container .wp-block-social-links .wp-social-link svg {
+footer.site-footer .top-footer-container .custom-social-icons a img {
     width: 36px;
     height: 36px;
     padding-top: 2px;
 }
-footer.site-footer .top-footer-container .wp-block-social-links .wp-social-link a:before {
+footer.site-footer .top-footer-container .custom-social-icons a:before {
     display: none;
 }
-footer.site-footer .top-footer-container .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor {
+footer.site-footer .top-footer-container .custom-social-icons a {
     width: 50px;
     height: 50px;
     padding: 6px 0 0 6px;
@@ -72,3 +78,4 @@ footer.site-footer .top-footer-container .wp-block-social-links .wp-block-social
         display : none
     }
 }
+

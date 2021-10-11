@@ -39,9 +39,10 @@ $footer_text = gymx_translate_theme_mod('gymx_footer_text', $footer_text);
 					<?php dynamic_sidebar( 'footer-3' ); ?>
                 <?php } else {?>
                         <div class="custom-social-icons">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri().'/img/social/line.png'?>"/></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri().'/img/social/facebook.png'?>"/></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri().'/img/social/instagram.png'?>"/></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri().'/img/social/twitter.png'?>"/></a>
                         </div>
                  <?php  } ?>
               </div>
