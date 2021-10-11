@@ -68,3 +68,9 @@ $logo_width_height = get_theme_mod( 'gymx_logo_width_height', '' );
 		</div>
 	</div>
 </div>
+<nav class="floating-menu">
+    <a href="/css/">CSS<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/line.png'?>"/></a>
+    <a href="/css/">CSS<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/phone.png'?>"/></a>
+    <a href="/css/">CSS<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/person.png'?>"/></a>
+    <a href="/css/">CSS<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/vip.png'?>"/></a>
+</nav>
