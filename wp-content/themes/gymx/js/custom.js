@@ -2,6 +2,7 @@
     var customizeTheme = {
         init: function () {
             customizeTheme.customizeTopMobileMenu();
+             customizeTheme.showFloatMenu();
         },
         customizeTopMobileMenu : function() {
             $.each($('#mobile-header-nav li a'),function( key, value) {
@@ -12,7 +13,19 @@
                     $(value).append('<br/><span>' + title_atr + '</span>');
                 }
             });
-        }
+        },
+        showFloatMenu : function() {
+            $('.floating-menu').fadeOut();
+            $(document).scroll(function() {
+                var scroll_position = 500;
+                var y = $(this).scrollTop();
+                if (y > scroll_position) {
+                    $('.floating-menu').fadeIn();
+                } else {
+                    $('.floating-menu').fadeOut();
+                }
+            });
+        },
     };
     $(document).ready(function(){
         customizeTheme.init();

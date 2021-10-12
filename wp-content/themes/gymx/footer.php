@@ -41,10 +41,10 @@ $footer_text = gymx_translate_theme_mod('gymx_footer_text', $footer_text);
                     <div class="custom-social-wrapper">
                         <h4 class="social-header">Social</h4>
                         <div class="custom-social-icons">
-                            <a href="#"><img src="<?php echo get_template_directory_uri().'/img/social/line.png'?>"/></a>
-                            <a href="#"><img src="<?php echo get_template_directory_uri().'/img/social/facebook.png'?>"/></a>
-                            <a href="#"><img src="<?php echo get_template_directory_uri().'/img/social/instagram.png'?>"/></a>
-                            <a href="#"><img src="<?php echo get_template_directory_uri().'/img/social/twitter.png'?>"/></a>
+                            <a href="tel:0800099911122"><img src="<?php echo get_template_directory_uri().'/img/social/line.png'?>"/></a>
+                            <a href="https://www.facebook.com/profile.php?id=100073489456905" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/social/facebook.png'?>"/></a>
+                            <a href="https://instagram.com/selfeste_vias?r=nametag" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/social/instagram.png'?>"/></a>
+                            <a href="https://twitter.com/Vias2021_12?t=7DLVQUDG9sceQV_OD-onLw&s=09" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/social/twitter.png'?>"/></a>
                         </div>
                     </div>
                   <?php } ?>

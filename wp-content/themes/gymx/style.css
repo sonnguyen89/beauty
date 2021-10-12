@@ -101,18 +101,37 @@ footer.site-footer .top-footer-container .custom-social-icons a {
         align-items: center;
         justify-content: center;
         color:#9b5200;
+
     }
     .floating-menu a {
         font-size: 0.9em;
         display: block;
-        padding: 0 3em;
-        color:#9b5200;
+        width: 100%;
+        color: #9b5200;
+        border-left: 1px solid #9b5200;
+        height: 70px;
         text-align: center;
-        border-left:1px solid #9b5200;
-        height:65px;
+        padding-top: 5px;
     }
     .floating-menu a img {
-        height: 2.3rem;
+        width: 2.3rem;
+        margin: 0 auto;
+    }
+
+    #go-top {
+        display: none;
+        position: fixed;
+        right: 20px;
+        bottom: 72px;
+        line-height: 0;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        background-color: #e53463;
+        color: #fff;
+        z-index: 300;
+        border-radius: 34px;
+        transition: all .1s ease;
     }
 
 }

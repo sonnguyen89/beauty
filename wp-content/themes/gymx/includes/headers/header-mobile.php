@@ -69,8 +69,8 @@ $logo_width_height = get_theme_mod( 'gymx_logo_width_height', '' );
 	</div>
 </div>
 <nav class="floating-menu">
-    <a href="/css/">CSS<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/line.png'?>"/></a>
-    <a href="/css/">CSS<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/phone.png'?>"/></a>
-    <a href="/css/">CSS<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/person.png'?>"/></a>
-    <a href="/css/">CSS<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/vip.png'?>"/></a>
+    <a href="tel:0800099911122"">LINE お問合せ<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/line.png'?>"/></a>
+    <a href="tel:0800099911122">お電話<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/phone.png'?>"/></a>
+    <a href="<?php echo get_site_url(); ?>/my-account/">ログイン<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/person.png'?>"/></a>
+    <a href="<?php echo get_site_url(); ?>/plans/">新規会員登録<img src="<?php echo get_template_directory_uri().'/img/floatingmenu/vip.png'?>"/></a>
 </nav>
