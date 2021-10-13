@@ -81,14 +81,17 @@ footer.site-footer .top-footer-container .custom-social-icons a {
     height: auto;
     padding: 0;
 }
-.floating-menu {
+.floating-menu-wrapper {
     display: none;
 }
 @media (max-width: 768px) {
     footer.site-footer .top-footer-container .social-header {
         display : none
     }
-    .floating-menu {
+    .floating-menu-wrapper {
+        display: block;
+    }
+    .floating-menu-wrapper .floating-menu {
         background: #ffffff;
         opacity: 0.9;
         padding: 0;

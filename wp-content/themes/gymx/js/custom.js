@@ -15,17 +15,36 @@
             });
         },
         showFloatMenu : function() {
-            $('.floating-menu').fadeOut();
             $(document).scroll(function() {
                 var scroll_position = 500;
                 var y = $(this).scrollTop();
                 if (y > scroll_position) {
-                    $('.floating-menu').fadeIn();
+                    $('.floating-menu-wrapper').fadeIn();
                 } else {
-                    $('.floating-menu').fadeOut();
+                    $('.floating-menu-wrapper').hide();
                 }
             });
         },
+        /*customizeForDevice : function() {
+            var ua = navigator.userAgent;
+            var checker = {
+                iphone: ua.match(/(iPhone|iPod|iPad)/),
+                blackberry: ua.match(/BlackBerry/),
+                android: ua.match(/Android/)
+            };
+            if (checker.android){
+                console.log('android');
+            }
+            else if (checker.iphone){
+                console.log('iphone');
+            }
+            else if (checker.blackberry){
+                console.log('blackberry');
+            }
+            else {
+                console.log('windows');
+            }
+        }*/
     };
     $(document).ready(function(){
         customizeTheme.init();
