@@ -53,13 +53,16 @@ if(!( function_exists('gymx_vc_page_template') )){
 			
 		if(!( isset($post->post_content) ) || is_search())
 			return $template;
-			
-		if( has_shortcode($post->post_content, 'vc_row') ){
-			$new_template = locate_template( array( 'page-visual-composer.php' ) );
-			if (!( '' == $new_template )){
-				return $new_template;
-			}
-		}
+
+        if($post->post_name != 'home') {
+            if( has_shortcode($post->post_content, 'vc_row') ){
+                $new_template = locate_template( array( 'page-visual-composer.php' ) );
+                if (!( '' == $new_template )){
+                    return $new_template;
+                }
+            }
+        }
+
 		return $template;
 	}
 	add_filter( 'template_include', 'gymx_vc_page_template', 99 );
