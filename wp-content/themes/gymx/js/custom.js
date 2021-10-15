@@ -16,7 +16,7 @@
         },
         showFloatMenu : function() {
             $(document).scroll(function() {
-                var scroll_position = 500;
+                var scroll_position = 300;
                 var y = $(this).scrollTop();
                 if (y > scroll_position) {
                     $('.floating-menu-wrapper').fadeIn();

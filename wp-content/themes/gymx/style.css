@@ -10,35 +10,35 @@ License URI: http://themeforest.net/licenses/terms/regular
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, full-width-template, theme-options, editor-style, featured-images, post-formats, sticky-post, translation-ready
 Text Domain: gymx
 */
-
-.home .background-banner {
-    background-size: cover;
+@font-face {
+    font-family: SatsukiGendaiMincho;
+    src: url('/fonts/SatsukiGendaiMincho-M.ttf');
+}
+body {
+    font-family: "SatsukiGendaiMincho",sans-serif;
+}
+.home .banner-wrapper,
+.home .banner-wrapper .container,
+.home .banner-wrapper .col-md-12 {
+    padding:0;
+}
+.home .banner-wrapper .background-banner,
+.home .banner-wrapper .background-banner-for-mobile {
     width: 100%;
-    height: 800px;
-    background-repeat: no-repeat;
+    height: auto;
     margin: 10px 0 30px;
     overflow: hidden;
 }
-.home .background-banner-for-mobile {
-    background-size: contain;
-    width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    margin: 0;
-    overflow: hidden;
-}
-.home .background-banner-for-mobile {
+.home .banner-wrapper .background-banner-for-mobile {
     display: none;
 }
-@media (max-width: 768px) {
-    .home .background-banner-for-mobile {
-        display: block;
-    }
-    .home .background-banner {
-        display: none;
-    }
+#mobile-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
-
 #mobile-header-nav li {
     padding-top: 15px;
     line-height: 21px;
@@ -63,17 +63,6 @@ Text Domain: gymx
 }
 .home.page .contact-section h1.contact-heading {
     font-size: 3.44rem;
-}
-
-@media (max-width: 468px) {
-    .home.page .contact-section h1.contact-heading {
-        font-size: 27px;
-    }
-}
-@media (max-width: 768px) {
-    .home.page .contact-section .vc_column_container {
-        margin: 0;
-    }
 }
 footer.site-footer .top-footer-container .custom-social-wrapper {
     margin-bottom: 0;
@@ -166,6 +155,18 @@ footer.site-footer .top-footer-container .custom-social-icons a {
         border-radius: 34px;
         transition: all .1s ease;
     }
-
+    .home.page .contact-section .vc_column_container {
+        margin: 0;
+    }
 }
-
+@media (max-width: 468px) {
+    .home .banner-wrapper .background-banner-for-mobile {
+        display: block;
+    }
+    .home .banner-wrapper .background-banner {
+        display: none;
+    }
+    .home.page .contact-section h1.contact-heading {
+        font-size: 27px;
+    }
+}
