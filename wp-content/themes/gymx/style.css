@@ -20,13 +20,15 @@ body {
 .home .banner-wrapper,
 .home .banner-wrapper .container,
 .home .banner-wrapper .col-md-12 {
-    padding:0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 .home .banner-wrapper .background-banner,
 .home .banner-wrapper .background-banner-for-mobile {
     width: 100%;
     height: auto;
-    margin: 10px 0 30px;
+    margin: 0 0 30px;
     overflow: hidden;
 }
 .home .banner-wrapper .background-banner-for-mobile {
@@ -161,6 +163,7 @@ footer.site-footer .top-footer-container .custom-social-icons a {
 }
 @media (max-width: 468px) {
     .home .banner-wrapper .background-banner-for-mobile {
+        margin-top: 77px;
         display: block;
     }
     .home .banner-wrapper .background-banner {
