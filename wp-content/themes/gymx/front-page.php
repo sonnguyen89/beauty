@@ -6,7 +6,7 @@
 ?>
 <div class="banner-wrapper">
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin: 0">
             <div class="col-md-12">
                 <!-- desktop banner -->
                 <div class="background-banner">
@@ -19,7 +19,6 @@
             </div>
         </div>
     </div>
-
 </div
 <div class="wrapper <?php echo esc_attr($top_padding) . ' ' . esc_attr($bottom_padding); ?>" id="page-wrapper">
     <div class="container">

@@ -14,7 +14,7 @@ $logo_width_height = get_theme_mod( 'gymx_logo_width_height', '' );
 <div id="mobile-header" class="mobile-header">
 	<div class="container">
 	    <div class="row">
-	        <div class="col-xs-12 v-align">
+	        <div class="col-xs-12">
     			<!--<div id="mobile-logo" class="logo">
     				<?php /*if ( ! empty( $logo ) ){ */?>
                             <a href="<?php /*echo esc_url( home_url( '/' ) ); */?>" id="site-logo-mobile" title="<?php /*echo esc_attr( get_bloginfo( 'name','display' ) ); */?>" rel="home">

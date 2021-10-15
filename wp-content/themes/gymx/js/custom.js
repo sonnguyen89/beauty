@@ -2,7 +2,9 @@
     var customizeTheme = {
         init: function () {
             customizeTheme.customizeTopMobileMenu();
-             customizeTheme.showFloatMenu();
+            customizeTheme.showFloatMenu();
+            //hide this floating menu wrapper
+            $('.floating-menu-wrapper').hide();
         },
         customizeTopMobileMenu : function() {
             $.each($('#mobile-header-nav li a'),function( key, value) {
@@ -20,10 +22,8 @@
                 var y = $(this).scrollTop();
                 if (y > scroll_position) {
                     $('.floating-menu-wrapper').show();
-                    $('#mobile-header').css('top' , '32px');
                 } else {
                     $('.floating-menu-wrapper').hide();
-                    $('#mobile-header').css('top' , '0');
                 }
             });
         },
