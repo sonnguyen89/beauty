@@ -170,4 +170,7 @@ footer.site-footer .top-footer-container .custom-social-icons a {
     footer.site-footer .top-footer-container .custom-social-icons {
         text-align: center;
     }
+    .site-footer .widget .title {
+        margin-bottom: 0;
+    }
 }
