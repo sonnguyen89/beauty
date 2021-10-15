@@ -128,7 +128,7 @@ footer.site-footer .top-footer-container .custom-social-icons a {
         width: 100%;
         color: #9b5200;
         border-left: 1px solid #9b5200;
-        height: 70px;
+        height: 80px;
         text-align: center;
         padding-top: 5px;
     }
@@ -141,7 +141,7 @@ footer.site-footer .top-footer-container .custom-social-icons a {
         display: none;
         position: fixed;
         right: 20px;
-        bottom: 72px;
+        bottom: 85px;
         line-height: 0;
         text-align: center;
         width: 50px;
