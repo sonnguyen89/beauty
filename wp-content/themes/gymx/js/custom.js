@@ -19,9 +19,11 @@
                 var scroll_position = 300;
                 var y = $(this).scrollTop();
                 if (y > scroll_position) {
-                    $('.floating-menu-wrapper').fadeIn();
+                    $('.floating-menu-wrapper').show();
+                    $('#mobile-header').css('top' , '32px');
                 } else {
                     $('.floating-menu-wrapper').hide();
+                    $('#mobile-header').css('top' , '0');
                 }
             });
         },
