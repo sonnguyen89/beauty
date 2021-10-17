@@ -10,7 +10,7 @@
             <div class="col-md-12">
                 <!-- desktop banner -->
                 <div class="background-banner">
-                    <img src="/wp-content/uploads/2021/09/WechatIMG3285.jpeg"/>
+                    <img class="img-banner" src="/wp-content/uploads/2021/09/WechatIMG3285.jpeg"/>
                 </div>
                 <!-- mobile banner -->
                 <div class="background-banner-for-mobile" >
