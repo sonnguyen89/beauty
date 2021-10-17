@@ -32,6 +32,7 @@ class SendGridService implements EmailService
 	 * @param string $message
 	 * @param string $headers
 	 * @param array $attachments
+     * @return boolean $result
 	 */
 	public function send_mail($to, $subject, $message, $headers, $attachments = '')
 	{
@@ -79,6 +80,12 @@ class SendGridService implements EmailService
 			}
 		}
 		BaseController::addLog($log_data);
+
+        if($log_data['status'] == 'Success') {
+            return true;
+        } else {
+            return false;
+        }
 	}
 
 	/**

@@ -257,7 +257,9 @@ if(!function_exists('wp_mail') && !in_array($enabled_email_service, array('defau
 			$emailService = new \WPMailPlus\Integrations\SendGridService();
 		}
 
-		$emailService->send_mail($to, $subject, $message, $headers, $attachments);
+		$result = $emailService->send_mail($to, $subject, $message, $headers, $attachments);
+
+        return $result;
 	}
 }
 
